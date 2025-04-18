@@ -7,6 +7,12 @@ edition = "2021"
 proc-macro = true
 
 [dependencies]
+proc-macro2 = "1.0.94"
+quote = "1.0.40"
+syn = { version = "2.0.100", features = ["extra-traits"] }
+
+
+[dev-dependencies]
 anyhow = "1.0.95"
 futures = "0.3.31"
 tokio = { version = "1.44.2", features = ["rt", "rt-multi-thread", "macros"] }

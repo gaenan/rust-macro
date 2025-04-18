@@ -25,8 +25,7 @@ fn main() -> Result<()> {
         "5".parse()?,
         "6".parse()?,
     ];
-    
-    
+
     // let v = vec![1, 2, 3];
 
     let v2 = <[_]>::into_vec(Box::new([1, 2, 3, 4]));
@@ -34,7 +33,7 @@ fn main() -> Result<()> {
     println!("first --> {:?}", v);
 
     println!("second --> {:?}", v1);
-    
+
     println!("third --> {:?}", v2);
 
     Ok(())
